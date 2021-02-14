@@ -1,0 +1,1114 @@
+/*
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com
+Twitter: @rich_clark
+*/
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000;
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;  
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+
+
+
+/*============================ここまでリセット==============================*/
+
+
+
+/* ==================================================================================================================
+Base style
+================================================================================================================== */
+/* font style*/
+html {
+  font-size: 14px;
+  font-family: 'Lato', 'ヒラギノ角ゴ Pro', 'Hiragino Kaku Gothic Pro', 'メイリオ', 'Meiryo', sans-serif;
+  color: #222222;
+}
+
+input, select, textarea {
+  color: #222222
+}
+
+/*anchor style*/
+
+a {
+  color: #222222;
+  text-decoration: none;
+}
+
+body {
+  font-family: 'Noto Sans JP', sans-serif;
+  font-weight: 400;
+}
+
+main {
+  display: block;
+}
+
+select {
+  appearance: none;
+}
+
+input:focus {
+  outline: 0;
+}
+
+
+/* =============================================================
+contents-tidy
+============================================================= */
+
+.contents-tidy {
+  display: flex;
+  justify-content: space-between;
+}
+
+.section-header.contents-tidy {
+  flex-direction: column;
+  align-items: center;
+}
+
+.page-top-button {
+  align-items: center;
+  justify-content: center;
+}
+
+/* =============================================================
+site-header
+============================================================= */
+
+.site-header {
+  padding: 20px 0;
+  position: absolute;
+  width: 100%;
+}
+
+
+/* =============================================================
+header-logo
+============================================================= */
+
+.header-logo-pc {
+  width: auto;
+  height: 20px;
+}
+
+/* =============================================================
+header-nav
+============================================================= */
+
+.header-nav-list li + li {
+  margin-left: 30px;
+}
+
+.header-nav-item {
+  display: block;
+}
+
+.current {
+  color: #F79314;
+}
+
+.header-nav span {
+  display: block;
+  font-weight: bold;
+  text-align: center;
+}
+
+.header-nav-item span:last-child {
+  font-size: 10px;
+}
+
+.header-nav {
+  line-height: 20px;
+}
+
+
+/* =============================================================
+header-button
+============================================================= */
+
+
+.header-button {
+  width: 150px;
+}
+
+.header-nav-list li:last-child {
+  margin-left: 20px;
+}
+
+
+/* =============================================================
+site-footer
+============================================================= */
+
+.site-footer {
+  padding-top: 80px;
+  padding-bottom: 40px;
+  background-color: #F79314;
+  position: relative;
+}
+
+.footer-info {
+  order: 1;
+}
+
+.footer-nav {
+  order: 2;
+  list-style: none;
+}
+
+.footer-character {
+  order: 3;
+  align-self: flex-end;
+}
+
+.site-footer-sub {
+  margin-top: 60px;
+}
+
+
+/* =============================================================
+footer-info
+============================================================= */
+
+.footer-info {
+  display: block;
+  color: #FFFFFF;
+}
+
+.footer-logo {
+  display: inline-block;
+  max-width: 280px;
+}
+
+.footer-logo img {
+  width: 100%;
+  height: auto;
+}
+
+.footer-company, .footer-address {
+  font-size: 12px;
+  line-height: 20px;
+  font-weight: bold;
+}
+
+.footer-social {
+  display: flex;
+  list-style: none;
+}
+
+.footer-social li + li {
+  margin-left: 20px;
+}
+
+.footer-social-item {
+  display: block;
+  max-width: 60px;
+  /*height: 60px;*/
+}
+
+.footer-social-item img {
+  width: 60px;
+  height: 60px;
+}
+
+.footer-address + .footer-social {
+  margin-top: 35px;
+}
+
+.footer-logo + .footer-company {
+  margin-top: 25px;
+}
+
+.footer-company + .footer-address {
+  margin-top: 10px;
+}
+
+/* =============================================================
+module: footer-copyright
+============================================================= */
+
+.footer-copyright {
+  color: #FFFFFF;
+  font-size: 12px;
+}
+
+
+/* =============================================================
+module: footer character
+============================================================= */
+.footer-character img {
+  width: auto;
+  height: 70px;
+}
+
+
+/* =============================================================
+footer-nav
+============================================================= */
+.footer-nav li + li {
+  margin-top: 35px;
+}
+
+.footer-nav a {
+  color: #FFFFFF;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.footer-nav a span {
+  font-weight: normal;
+  margin-left: 1em;
+}
+
+
+/* =====================================
+Module: page-top-button
+===================================== */
+
+.page-top-button {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  top: -25px;
+  right: 50px;
+  border-radius: 50%;
+  background-color: #FFFFFF;
+  box-shadow: 0 12px 30px -15px;
+  transition: .2s;
+}
+
+.page-top-arrow {
+  display: inline-block;
+  height: 10px;
+  width: 10px;
+  border-left: solid 3px #F79214;
+  border-top: solid 3px #F79214;
+  transform: rotate(45deg);
+  text-decoration: none;
+  text-indent: 100%;
+  /*white-space: nowrap;*/
+  overflow: hidden;
+}
+
+
+/* =====================================
+Module: underlayer-hero
+===================================== */
+
+.link-button {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #FFFFFF;
+  background-color: #f79314;
+  border-radius: 30px;
+  text-decoration: none;
+  text-align: center;
+  align-items: center;
+  font-weight: bold;
+  width: 100%;
+  height: 60px;
+  font-size: 20px;
+  border: none;
+}
+
+.link-button span:first-child {
+  letter-spacing: 4px;
+  line-height: 1.5;
+  font-family: 'Lato', sans-serif;
+}
+
+.link-button span:last-child {
+  font-size: 14px;
+}
+
+.menu {
+  height: 40px;
+  font-size: 12px;
+}
+
+.no-subtitle {
+  font-size: 16px;
+}
+
+.inversion {
+  color: #f79314;
+  background-color: #FFFFFF;
+  margin-right: 10px;
+}
+
+
+/* =====================================
+Modules:section-title
+===================================== */
+
+.section-header {
+  width: 100%;
+}
+
+.section-main-heading {
+  font-size: 46px;
+  font-weight: bold;
+}
+
+.section-main-heading span {
+  font-weight: 900;
+  font-family: 'Lato', sans-serif;
+}
+
+.section-sub-heading {
+  display: inline-block;
+  margin-top: 10px;
+  font-weight: bold;
+  font-size: 16px;
+  text-align: center;
+}
+
+.section-sub-heading span {
+  font-family: 'Lato', sans-serif;
+}
+
+.section-header h2 span {
+  font-size: 50px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 900;
+}
+
+.inversion {
+  color: #FFFFFF;
+  background-color: #f79314;
+}
+
+.bottom-line::after {
+  content: '';
+  display: block;
+  border-bottom: solid 6px #f79314;
+  width: 50px;
+  margin-top: 20px;
+}
+
+
+/* =====================================
+Modules:section-about
+===================================== */
+
+.top-about-button {
+  width: 320px;
+}
+
+.about-text {
+  color: #FFFFFF;
+  width: 53%;
+}
+
+.about-text h2 {
+  font-size: 30px;
+  letter-spacing: 1px;
+}
+
+.about-text h2 span {
+  font-size: 50px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 900;
+}
+
+.about-text p {
+  font-weight: 700;
+  margin-top: 15px;
+  line-height: 2.3;
+}
+
+
+/* =====================================
+Module: desc-list
+===================================== */
+
+.list-number {
+  margin-top: 110px;
+  list-style: none;
+}
+
+.list-number > li + li {
+  margin-top: 90px;
+}
+
+.list-number li {
+  background-color: #fcfaf5;
+  border-radius: 20px;
+  text-align: center;
+}
+
+.list-no {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: -90px auto 0 auto;
+  background-color: #fcfaf5;
+  border-radius: 50%;
+  font-size: 40px;
+  color: #f79314;
+  font-weight: bold;
+  
+}
+
+.list-title {
+  font-size: 30px;
+  line-height: 44px;
+  margin: -20px 0 0;
+}
+
+.list-text {
+  font-size: 16px;
+  margin-top: 30px;
+  letter-spacing: 2px;
+  line-height: 35px;
+}
+
+.section-top-hero {
+  padding-top: 90px;
+  background-image: url(https://camp.potepan.com/wp-content/themes/potepancamp/assets/images/top-hero.png);
+  background-size: auto 100%;
+  background-position: right 0;
+  background-repeat: no-repeat;
+}
+
+.top-hero-box {
+  padding-top: 100px;
+  padding-bottom: 170px;
+  width:460px;
+  display: flex;
+}
+
+.top-hero-box h1 img {
+  width: 100%;
+}
+
+.top-hero-text {
+  margin: 30px 0;
+  line-height: 30px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.top-hero-text span {
+  color: #f79314;
+}
+
+.content-width {
+  max-width: 1040px;
+  padding: 0 50px;
+  margin: 0 auto;
+}
+
+.proviso {
+  padding-bottom: 30px;
+  font-size: 10px;
+  color: #888;
+  width: 600px; 
+  letter-spacing: 1px
+}
+
+/*=====================top-about=======================*/
+
+.top-about {
+  background-color: #f79314;
+  padding-bottom: 100px;
+}
+
+.top-about img {
+  width: 100%;
+  margin-top: 45px;
+}
+
+.top-about-content {
+  padding-top: 60px;
+}
+
+.about-text p {
+  font-weight: normal;
+}
+
+.top-about-button {
+  align-items: center;
+}
+
+.top-about-button {
+  display: inline-block;
+  margin: auto 0px;
+}
+
+.top-about-button a {
+  color: #f79314;
+  background-color: #FFFFFF;
+}
+
+/*=====================POTEPANの特徴========================*/
+
+.main-section {
+  padding-top: 100px;
+}
+
+.section-header {
+  flex-direction: column;
+  align-items: center;
+}
+
+.list-number > li {
+  padding: 40px;
+}
+
+.list-title {
+  letter-spacing: 2px;
+}
+
+.list-text {
+  letter-spacing: 2px;
+  font-weight: bold;
+}
+
+.list-text span {
+  font-size: 30px;
+  color: #f79314;
+}
+
+.example {
+  background-color: #FFFFFF;
+  margin: 50px 0 0 0;
+  padding: 30px;
+  border-radius: 20px;
+}
+
+.example-title {
+  width: 230px;
+  margin: 0 auto;
+  padding-bottom: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  border-bottom: 3px solid #f79314;
+}
+.example-title-heading {
+  font-size: 25px;
+}
+
+.example-title img {
+  height: 40px;
+  width: 40px;
+  margin-left: 10px;
+}
+
+.example-contents {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  margin: 0;
+}
+
+.example-contents li {
+  background-color: #FFFFFF;
+  list-style: none;
+  width: 25%;
+}
+
+/*=======================多くの受講者受け入れ実績==================*/
+.example-list {
+  list-style: none;
+  align-items: center;
+}
+
+
+.example-list li {
+  background-color: #FFFFFF;
+  width: 25%;
+}
+
+.example-list li img {
+  width: 100%;
+}
+
+/*===================現役エンジニアが講師====================*/
+.engineer-list {
+  margin-top: 50px;
+}
+
+.engineer-box {
+  background-color: #FFFFFF;
+  padding: 20px;
+  width: 27%;
+  border-radius: 20px;
+}
+
+.engineer-conpany-logo {
+  display: flex;
+  align-items: center;
+  height: 100px;
+}
+
+.engineer-conpany-logo img {
+  display: inline-block;
+  margin: 0 auto;
+}
+
+.engineer-profile {
+  display: flex;
+}
+
+.engineer-name {
+  margin-left: 20px;
+  width:  200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.engineer-name span {
+  font-size: 14px;
+  margin-bottom: 10px;
+  color: #f79314;
+  font-weight: bold;
+}
+
+.engineer-text {
+  line-height: 21px;
+  background-color: #f6f6f6;
+  padding: 20px;
+  margin-top: 30px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  position:relative;
+  border-radius: 10px;
+  
+}
+
+.engineer-text::before {
+  content: '';
+  position: absolute;
+  /*right: 1;*/
+  top: -10px;
+  left: 15px;
+  border-style: solid;
+  border-color: #f6f6f6 transparent;
+  border-width: 0px 15px 15px 15px;
+}
+
+.top-potepan {
+  background-color: #f6f6f6;
+  background-image: url(https://camp.potepan.com/wp-content/themes/potepancamp/assets/images/bg-section-top-course.png);
+  background-repeat: no-repeat;
+  background-size: 300px 280px;
+  background-position: right 10% top 30%;
+}
+
+.top-potepan h2 {
+  margin-bottom: 10px;
+}
+
+/*==========================ポテパンキャンプ の選べるコース====================*/
+
+
+.course-list {
+  list-style: none;
+  margin-top: 50px;
+}
+
+.course-list > li {
+  height: 200px;
+  background-color: #FFFFFF;
+}
+
+.course-list h3 {
+  font-size: 20px;
+  height: 200px;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  letter-spacing: 2px;
+  line-height: 40px;
+  width: 300px;
+  position: relative;
+  right: 30px;
+}
+
+.course-list h3::after {
+  content: '';
+  display: block;
+  width: 280px;
+  height: 80px;
+  position: absolute;
+  border: solid 3px;
+  border-image: linear-gradient(to right, #f79214 0%, #f74e06 100%);
+  border-image-slice: 1;
+}
+
+.course-list li + li {
+  margin-top: 40px;
+}
+
+.course-contents {
+  width: 700px;
+}
+
+.course-text {
+  padding: 30px 0 20px 0;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.orange {
+  color: #f79314;
+}
+
+.red {
+  color: #f75307;
+}
+
+.course-contents div p {
+  display: flex;
+  justify-content: center;
+  padding: 10px 20px;
+  background-color: #222222;
+  color: #FFFFFF;
+  width: 70px;
+  border-radius: 45px;
+  letter-spacing: 1px;
+}
+
+.conditions-list {
+  margin-top: 10px;
+  margin-left: 30px;
+  list-style: none;
+  font-weight: bold;
+}
+
+.conditions-list::before {
+  content: '';
+  width: 10px;
+  height: 10px;
+  display: inline-block;
+  background-color: #f79314;
+  border-radius: 10px;
+  position: relative;
+  right: 20px;
+  top: 15px;
+}
+
+.course-link {
+  padding: 10px;
+  float: right;
+  font-size: 12px;
+  color: #999999;
+}
+
+.course-link::after {
+  content:'';
+  display: inline-block;
+  width: 7px;
+  height: 7px;
+  border-right: 3px solid #f79314;
+  border-bottom: 3px solid #f79314;
+  transform: rotate(-45deg);
+  margin: 0 20px 0 10px;
+}
+
+.section-content .section-button {
+  height: 200px;
+  display: flex;
+  align-items: center;
+}
+
+.section-content .link-button {
+  width: 300px;
+  height: 60px;
+  line-height: 25px;
+  margin: 0 auto;
+}
+
+.top-service {
+  background-color: #FCFAF5;
+  height: 700px;
+}
+
+.top-service h2 {
+  margin-bottom: 10px;
+}
+
+.section-content {
+  margin-top: 50px;
+}
+
+.message-title {
+  font-size: 40px;
+  color: #f79314;
+  font-weight: 900;
+  font-family: 'Lato', sans-serif;
+  letter-spacing: 3px;
+  position: relative;
+  top: 20px;
+}
+
+.message-text {
+  background-color: #FFFFFF
+}
+
+.message-text > div {
+  padding: 40px;
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  line-height: 30px;
+  font-weight: 500;
+  width: 700px;
+}
+
+.message-text p {
+  width: 85%;
+}
+
+.message-thumbnail {
+  position: relative;
+  right: 100px;
+  top: 80px;
+}
+
+.message-thumbnail p {
+  color: #FFFFFF;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  line-height: 30px;
+}
+
+.message-thumbnail span {
+  font-size: 25px;
+  font-weight: 700;
+}
+
+/*================================受講生の声============================*/
+
+.interview-list {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+.interview-list li {
+  width: 30%;
+}
+
+.interview-list li + li {
+  margin-left: 20px;
+}
+
+.interview-list a {
+  height: 400px;
+}
+
+.interview-list li a img {
+  display: inline-block;
+  width: 300px;
+  height: 250px;
+  position: relative;
+  top: 30px;
+}
+
+.interview-thumbnail-titlebox {
+  position: relative;
+  bottom: 40px;
+  left: 15px;
+  z-index: 3;
+}
+
+.interview-media-thumbnail {
+  position: relative;
+}
+
+.interview-media-thumbnail:after {
+  content:'';
+  width: 300px;
+  height: 130px;
+  position: absolute;
+  bottom: 25px;
+  display: block;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.8) 70%, rgba(30, 30, 30, 0.7), rgba(50, 50, 50, 0));
+}
+
+.interview-thumbnail-title {
+  color: #f79314;
+  font-size: 16px;
+  border-bottom: 2px solid #FFFFFF;
+  padding-bottom: 10px;
+  width: 270px;
+}
+
+.interview-thumbnail-subtitle {
+  margin-top: 10px;
+  color: #ffffff;
+}
+
+.interview-thumbnail-subtitle > span:last-child {
+  font-size: 12px;
+  margin-left: 10px;
+}
+
+.name {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.interview-media-text {
+  font-size: 14px;
+  letter-spacing: 0.5px;
+  font-weight: bold;
+  line-height: 25px;
+}
+
+.students {
+  margin-bottom: 10px;
+}
+
+/*==============================ポテパンが運用するサービス=========================*/
+
+.service-list {
+  list-style: none;
+  width: 1040px;
+}
+
+.service-list li{
+  width: 30%;
+}
+
+.service-list li img {
+  width: 80%;
+}
+
+.service-media-thumbnail {
+  height: 150px;
+  background-color: #ffffff;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.service-media > .red {
+  border: 1px solid #f79314;
+}
+
+.green {
+  border: 1px solid #07AF78;
+}
+
+.black {
+  border: 1px solid #222222;
+}
+
+.service-media-text {
+  margin-top: 20px;
+  margin-bottom: 70px;
+  letter-spacing: 1px;
+  font-weight: bold;
+  line-height: 20px;
+}
