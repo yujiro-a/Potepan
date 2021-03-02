@@ -1,0 +1,1142 @@
+@charset "utf-8";
+/*
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com
+Twitter: @rich_clark
+*/
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000;
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;  
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+
+
+/*=========================================================
+==================reset css　ここまで======================
+=========================================================*/
+
+
+/*=========================================================
+=====================基本的な設定=========================
+=========================================================*/
+
+html {
+  font-size: 16px;
+  font-family: 'Lato','Lato-Black' 'Noto Sans JP', sans-serif;
+}
+
+.contents-width {
+  width: 1050px;
+  margin: 0 auto;
+}
+
+.contents-tidy {
+  display: flex;
+  justify-content: space-between;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.white {
+  background-color: #FFFFFF;
+}
+
+.hover-opacity:hover{
+  transition: opacity .2s;
+  opacity: 0.7;
+}
+
+/*=========================================================
+=====================サイトのヘッダ��=========================
+=========================================================*/
+
+.site-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 30px;
+}
+
+.header-logo {
+  display: inline-block;
+  width: 190px;
+}
+
+.header-logo img {
+  width: 100%;
+}
+
+.header-nav-list {
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 700px;
+}
+
+.header-nav-item {
+  font-size: 12px;
+  font-weight: bold;
+  color: #222222;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  line-height: 15px;
+}
+
+.current {
+  color: #F79414;
+}
+
+.header-nav-item span:last-child {
+  font-size: 10px;
+}
+
+.counseling-button {
+  font-size: 12px;
+  text-decoration: none;
+  color: #ffffff;
+  display: block;
+  background-color: #f79414;
+  padding: 15px 30px;
+  border-radius: 30px;
+  font-weight: bold;
+}
+
+
+/*=========================================================
+=====================ここからメイン要素=========================
+=========================================================*/
+
+
+.main-header {
+  background-color: #f79414;
+  background-image: url(https://camp.potepan.com/wp-content/themes/potepancamp/assets/images/course-hero-pc.png);
+  background-position: center;
+  height: 200px;
+  display: flex;
+  align-items: center;
+}
+
+.main-header h1 {
+  color: #FFFFFF;
+  font-size: 40px;
+  padding-left: 130px;
+}
+
+
+/*=========================================================
+=====================ページの説明部分=========================
+=========================================================*/
+
+.top-section {
+  background-color: #FCFAF5;
+  padding-bottom: 80px;
+}
+
+.main-title {
+  height: 200px;
+}
+
+.main-title span {
+  font-size: 50px;
+  font-family: 'Lato', sans-serif;
+}
+
+.main-title h2 {
+  font-size: 46px;
+  position: relative;
+}
+
+.main-title h2:after {
+  content: '';
+  position: absolute;
+  bottom: -40px;
+  left: 45%;
+  width: 50px;
+  height: 7px;
+  background-color: #f79414;
+}
+
+.main-title-text {
+  padding-top: 30px;
+  height: 300px;
+  line-height: 30px;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-bottom: 50px;
+}
+
+.main-title-text p {
+  text-align: center;
+}
+
+.title-text-center {
+  font-size: 20px;
+  line-height: 50px;
+  font-weight: 700;
+}
+
+.title-text-center p span {
+  background: linear-gradient(transparent 70%, #FFF79D 30%);
+}
+
+
+/*=========================================================
+=====================コースの共通POINT=========================
+=========================================================*/
+
+.course-point {
+  padding: 50px 45px 45px 45px;
+  background-color: #FFFFFF;
+  border-radius: 20px;
+  margin-bottom: 60px;
+}
+
+.point-width {
+  width: 31%;
+}
+
+.point-header-contents {
+  display: flex;
+  justify-content: space-between;
+}
+
+.point-header {
+  width:330px;
+  font-size: 30px;
+  margin: 0 auto;
+  padding-bottom: 45px;
+  position: relative;
+  z-index: 2;
+}
+
+.point-header::after {
+  content: '';
+  width: 45px;
+  height: 45px;
+  position: absolute;
+  top: -100px;
+  left: 30%;
+  padding: 30px;
+  background-image: url(https://camp.potepan.com/wp-content/themes/potepancamp/assets/images/heading-icon.png);
+  background-size: 45px 45px;
+  background-color: #FFFFFF;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.point-text {
+  font-size: 14px;
+  height: 30px;
+  font-family: 'Noto Sans JP', sans-serif;
+  font-weight: 700;
+  color: #FFFFFF;
+  background-color: #222222;
+  border-radius: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 17px;
+}
+
+.point-image {
+  margin-bottom: 17px;
+}
+
+.point-image img {
+  width: 100%;
+}
+
+.point-content-text {
+  font-weight: 700;
+  line-height: 24px;
+}
+
+.point-content-text::before {
+  content: '';
+  width: 20px;
+  height: 20px;
+  margin-bottom: 10px;
+  margin-right: 10px;
+  background-image: url(https://camp.potepan.com/wp-content/themes/potepancamp/assets/images/icon-finger.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+
+/*=========================================================
+=====================コースの詳細=========================
+=========================================================*/
+
+.detail {
+  border-radius: 20px;
+  border: 2px solid #EDECE7;
+}
+
+.detail:last-child {
+  margin-left: 30px;
+}
+
+.course-details {
+  width: 950px;
+}
+
+.detail-title {
+  height:  90px;
+  font-size: 14px;
+  color: #FFFFFF;
+  background-color: #F79414;
+  border-radius: 20px 20px 0 0;
+  text-align: center;
+  line-height: 25px;
+}
+
+.detail-title span {
+  display: block;
+  font-size: 20px;
+}
+
+.course-price {
+  height: 90px;
+  font-size: 28px;
+  font-weight: 700;
+  font-family: 'Lato-Black', sans-serif;
+}
+
+.course-price::after {
+  content: '税別';
+  font-size: 12px;
+  font-weight: 400;
+  margin-top: 10px;
+  margin-left: 5px;
+}
+
+.course-text {
+  color: rgba(34, 34, 34, 0.6);
+  padding: 0 20px 30px 20px;
+  line-height: 32px;
+  font-family: "Noto Sans CJK JP"; sans-serif;
+}
+
+.course-detail {
+  flex-direction: column;
+}
+
+.course-detail p {
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Noto Sans JP", sans-serif;
+}
+
+.course-detail p + p {
+  font-size: 14px;
+}
+
+.course-detail p:first-child {
+  height: 45px;
+  padding-bottom: 15px;
+  align-items: flex-end;
+}
+
+.course-detail p span {
+  color: #f79414;
+  margin-left: 5px;
+}
+
+.period {
+  font-weight: 700;
+}
+
+.period span {
+  font-size: 30px;
+}
+
+.skin {
+  background-color: #FFF8EA;
+  width: 100%;
+}
+
+.look a {
+  font-weight: 700;
+  color: #F79315;
+  text-decoration: none;
+}
+
+.look::before {
+  content: '';
+  width: 3px;
+  height: 3px;
+  border-right: 2px solid #F79315;
+  border-bottom: 2px solid #F79315;
+  margin-right: 10px;
+  transform: rotate(45deg);
+}
+
+.plan {
+  background-color: #FCFAF5;
+  padding: 40px;
+  border-radius: 30px;
+  margin-bottom: 60px;
+}
+
+.plan-title {
+  font-size: 15px;
+  margin-bottom: 35px;
+}
+
+.plan-title span {
+  font-size: 36px;
+  display: block;
+  margin-top: 10px;
+  background: linear-gradient( to right,  rgb(247,144,19) 10%, rgb(247,83,7) 60% );
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.plan-title-sub {
+  flex-direction: column;
+}
+
+.plan-point {
+  background-color: #FFFFFF;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 40px;
+}
+
+.plan-point:last-child {
+  margin-bottom: 0;
+}
+
+.plan-point h4 {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.plan-point h4::before {
+  content: '';
+  width: 20px;
+  height: 20px;
+  background-image: url(https://camp.potepan.com/wp-content/themes/potepancamp/assets/images/icon-point.png);
+  position: relative;
+  top: 2px;
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+}
+
+.plan-point-list {
+  line-height: 25px;
+  list-style: none;
+  font-family: "Noto Sans JP", sans-serif;
+}
+
+.plan-point-list li::before {
+  content: '';
+  width: 8px;
+  height: 8px;
+  background-color: #f79414;
+  position: relative;
+  display: inline-block;
+  border-radius: 50%;
+  bottom: 2px;
+  right: 5px;
+}
+
+.plan-style {
+  color: #f79414;
+  background-color: #FCFAF5;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-weight: 700;
+  width: 140px;
+  line-height: 30px;
+  border-radius: 20px;
+}
+
+
+.plan-contents::before {
+  content: '';
+  width: 20px;
+  height: 20px;
+  background-image: url(https://camp.potepan.com/wp-content/themes/potepancamp/assets/images/icon-pencil.png);
+  background-size: 100%;
+  position: relative;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.plan-contents-text {
+  line-height: 25px;
+  margin: 20px;
+}
+
+.plan-period::before {
+  content: '';
+  width: 20px;
+  height: 20px;
+  background-image: url(https://camp.potepan.com/wp-content/themes/potepancamp/assets/images/icon-calender.png);
+  background-size: 100%;
+  position: relative;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.plan-conditions::before {
+  content: '';
+  width: 20px;
+  height: 20px;
+  background-image: url(https://camp.potepan.com/wp-content/themes/potepancamp/assets/images/icon-condition.png);
+  background-size: 100%;
+  position: relative;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.plan-price::before {
+  content: '';
+  width: 20px;
+  height: 20px;
+  background-image: url(https://camp.potepan.com/wp-content/themes/potepancamp/assets/images/icon-coin.png);
+  background-size: 100%;
+  position: relative;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+/*==========================学習内容========================*/
+.study-list {
+  display: flex;
+  flex-flow: wrap;
+  justify-content: space-between;
+}
+
+.study-list-item {
+  box-sizing: border-box;
+  width: 49%;
+  margin: 10px 0;
+}
+
+.study-list-item img {
+  width: 100%;
+}
+
+.study-text {
+  margin: 0 10px;
+  font-family: "Noto Sans JP", sans-serif;
+  width: 90%;
+}
+
+.study-item-title {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 40px;
+  margin-top: 5px;
+}
+
+.study-item-text {
+  line-height: 24px;
+}
+
+/*======================railsキャリアコース======================*/
+
+.price-compression {
+  font-family: "Noto Sans JP", sans-serif;
+  display: flex;
+}
+
+.compression-image {
+  width: 90px;
+  height: 90px;
+}
+
+.compression-image img {
+  width: 100%;
+  height: 100%;
+}
+
+.compression-text {
+  margin-left: 15px;
+}
+
+.compression-text div {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 26px;
+}
+
+.compression-text p {
+  letter-spacing: 1px;
+  margin-top: 10px;
+  line-height: 24px;
+}
+
+.compression-text p span {
+  color: #f79414;
+}
+
+
+/*=======================受講生の声=======================*/
+
+
+.students-voice {
+  background-color: #F6F6F6;
+  padding-bottom: 120px;
+}
+
+.students-voice-sub {
+  background-image: url(https://camp.potepan.com/wp-content/themes/potepancamp/assets/images/bg-section-top-course.png);
+  background-repeat: no-repeat;
+  background-size: 280px 270px;
+  background-position: right 0 top 40px;
+}
+
+.voice-title {
+  margin-bottom: 25px;
+}
+
+.students-introduction {
+  display: flex;
+  justify-content: space-between;
+}
+
+.students {
+  width: 30%;
+  display: block;
+  color: #222222;
+  text-decoration: none;
+  transition: .2s;
+}
+
+.students:hover {
+  color: #f79414;
+}
+
+.students:hover .students-image img {
+  transform: scale(1.1);
+}
+
+.students-image {
+  overflow: hidden;
+  max-height: 190px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.students-image img {
+  width: 120%;
+  position: relative;
+  right: 25px;
+  transition: .2s;
+}
+
+.students-text {
+  line-height: 30px;
+  font-weight: 700;
+}
+
+/*======================footer=========================*/
+
+
+
+.footer {
+  background-color: #f79414;
+  height: 470px;
+  padding-bottom: 40px;
+  width: auto;
+}
+
+.footer-main {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 80px;
+  padding-left: 50px;
+  width: auto;
+}
+
+.page-top {
+  float: right;
+  height: 55px;
+  width: 55px;
+  background-color: #FFFFFF;
+  border-radius: 50%;
+  position: relative;
+  top: -25px;
+  right: 55px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+}
+
+.page-top-button {
+  height: 7px;
+  width: 7px;
+  border-right: 3px solid #f79414;
+  border-top: 3px solid #f79414;
+  transform: rotate(-45deg);
+  overflow: hidden;
+}
+
+.company-name {
+  width: 285px;
+  display: block;
+}
+
+.company-name img {
+  width: 100%;
+}
+
+.company-text {
+  margin-top: 25px;
+  color: #FFFFFF;
+  font-family: "Noto Sans JP", sans-serif;
+  font-weight: 700;
+}
+
+.company-text p:last-child {
+  margin-top: 15px;
+  line-height: 25px;
+}
+
+.social {
+  margin-top: 40px;
+}
+
+.social-item {
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+}
+
+.social-item img {
+  width: 100%;
+}
+
+.social-item:last-child {
+  margin-left: 20px;
+}
+
+small {
+  display: inline-block;
+  margin-top: 90px;
+  color: #FFFFFF;
+  font-size: 12px;
+}
+
+
+.footer-list {
+  height: 285px;
+  color: #FFFFFF;
+  display: flex;
+  float: left;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.footer-list-item {
+  color: #FFFFFF;
+  text-decoration: none;
+  display: block;
+}
+
+.footer-list li span {
+  font-weight: 700;
+  margin-right: 15px;
+}
+
+.footer-image {
+  height: 285px;
+  display: flex;
+  align-items: flex-end;
+}
+
+.footer-image-size {
+  width: 125px;
+}
+
+.footer-image-size img {
+  width: 100%;
+}
+
+.mb {
+  display: none;
+}
+  
+/*＝＝＝＝＝＝＝＝＝＝＝＝＝＝スマホサイズ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝*/
+
+@media (max-width:767px) {
+  .contents-width {
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-size: 15px;
+  }
+  
+  /*==========================header==============================*/
+  .site-header {
+    width: 100%;
+    padding: 0;
+  }
+  
+  .header-logo {
+    width: 148.5px;
+    margin-left: 10px;
+  }
+  
+  .header-logo img {
+    width: 100%;
+  }
+  
+  .header-nav-list {
+    width: 100%;
+    justify-content: flex-end;
+  }
+  
+  .header-nav-list li {
+    margin-right: 5px;
+  }
+  
+  .header-nav-list a {
+    font-size: 10px;
+  }
+  
+  .counseling-button {
+    padding: 10px;
+    margin-right: 10px;
+  }
+  
+  .main-header {
+    height: 160px;
+    background-image: url(https://camp.potepan.com/wp-content/themes/potepancamp/assets/images/course-hero-sp.png);
+    background-size: 50% 100%;
+    background-repeat: no-repeat;
+    background-position: bottom;
+  }
+  
+  .main-header h1 {
+    padding: 0;
+    font-size: 22px;
+    padding-bottom: 40px;
+    letter-spacing: 4px;
+  }
+  
+  .main-header-inner {
+    display: flex;
+    justify-content: center;
+  }
+  
+  /*===================main-title=======================*/
+  
+  .main-title {
+    text-align: center;
+    font-size: 26px;
+  }
+  
+  .main-title h2 {
+    font-size: 26px;
+  }
+  
+  .main-title h2 span {
+    display: block;
+    font-size: 30px;
+  }
+  
+  
+  /*======================main-text=======================*/
+  
+  .main-title-text {
+    padding-top: 0;
+    padding-bottom: 80px;
+    width: 100%;
+    height: 100%;
+
+  }
+  
+  .main-title-text p {
+    margin-top: 24px;
+    line-height: 30px;
+  }
+  
+  .pc {
+    display: none;
+  }
+  
+  .mb {
+    display: block;
+  }
+  
+  /*=======================course-point======================*/
+  
+  
+  .point-header::after{
+    width: 60px;
+    height: 60px;
+    padding: 0;
+    background-size: 25px 25px;
+    top: -60px;
+    left: 40%;
+  }
+  .course-point {
+    padding: 30px 20px 40px;
+  }
+  
+  .course-point h2 {
+    font-size: 20px;
+    text-align: center;
+  }
+  
+  .point-header-contents {
+    flex-direction: column;
+  }
+  
+  .point-header-contents li {
+    margin-top: 36px;
+  }
+  
+  .point-width {
+    width: 100%;
+  }
+  
+  .point-text {
+    font-size: 15px;
+    text-align: center;
+  }
+  
+  /*=====================course=====================*/
+  
+  .course-details {
+    flex-direction: column;
+  }
+  
+  .detail {
+    margin-bottom: 60px;
+  }
+  .detail:last-child {
+    margin: 0;
+  }
+  
+  .plan-title-sub span {
+    font-size: 24px;
+    text-align: center;
+    line-height: 30px;
+  }
+  
+  .plan-title {
+    margin: 0;
+  }
+  
+  .plan-point {
+    margin: 20px 0 0 0;
+    padding: 16px 20px 20px;
+  }
+  
+  .plan-style {
+    margin: 20px auto 0 auto;
+  }
+  
+  .plan-point h4 {
+    text-align: center;
+  }
+  
+  .plan-point-list li + li {
+    margin-top: 10px;
+  }
+  
+  .plan-contents-text {
+    text-align: center;
+    line-height: 30px;
+  }
+  
+  
+  /*=============================学習内容=======================*/
+  .study-list-item {
+    width: 100%;
+  }
+  
+  /*======================あなたの持っているスキル分、料金を圧縮===========*/
+  .price-compression {
+    flex-direction: column;
+  }
+  
+  .compression-image {
+    width: 130px;
+    height: 130px;
+    margin: 0 auto 20px auto;
+  }
+  
+  .compression-text {
+    font-size: 16px;
+  }
+  
+  .compression-text div {
+    text-align: center;
+    font-size: 20px;
+  }
+  /*======================footer====================*/
+  
+  .footer {
+    height: auto;
+    background-color: #f79414;
+  }
+  
+  .footer-main {
+    flex-direction: column;
+    padding-bottom: 0;
+  }
+  
+  .footer-main nav {
+    order: 1;
+    margin-left: 20px;
+    padding-bottom: 0;
+  }
+  
+  .footer-main .footer-image {
+    order: 2;
+    height: auto;
+    margin-top: 50px;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .footer-main > div:first-child {
+    order: 3;
+    margin-top: 30px;
+    padding-top: 30px;
+    border-top: 1px solid #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .company-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+  }
+  
+  .company-text p:last-child {
+    text-align: center;
+  }
+  
+  .social {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin-top: 35px;
+  }
+  
+  small {
+    margin-top: 60px;
+  }
+}
