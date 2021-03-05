@@ -1,0 +1,40 @@
+body {
+  width: 200px;
+}
+
+input {
+  display: block;
+  width: 100%;
+  border-radius: 0px;
+  color: #FFFFFF;
+  background-color: #222222;
+  text-align: right;
+  box-sizing: border-box;
+}
+
+#button {
+  width: 100%;
+}
+
+.stage {
+  width: 100%;
+  margin-top: 2px;
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+
+.stage button:not(:first-child) {
+  margin-left: 2px;
+}
+
+
+button {
+  display: inline-block;
+  width: 25%;
+  margin-left: 1px;
+}
+
+.fifth button {
+  width: 50%;
+}
