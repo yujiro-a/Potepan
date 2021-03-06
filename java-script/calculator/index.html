@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="main.css">
+  <title>電卓</title>
+</head>
+<body>
+  <h1>電卓</h1>
+  <input type="text"/>
+  <div id = button>
+    <div class = "first stage">
+      <button value = "7" onclick = "append(this)">7</button>
+      <button value = "8" onclick = "append(this)">8</button>
+      <button value = "9" onclick = "append(this)">9</button>
+      <button value = "+" onclick = "operator(this)">+</button>
+    </div>
+    
+    <div class = "second stage">
+      <button value = "4" onclick = "append(this)">4</button>
+      <button value = "5" onclick = "append(this)">5</button>
+      <button value = "6" onclick = "append(this)">6</button>
+      <button value = "-" onclick = "operator(this)">-</button>
+    </div>
+    
+    <div class = "third stage">
+      <button value = "1" onclick = "append(this)">1</button>
+      <button value = "2" onclick = "append(this)">2</button>
+      <button value = "3" onclick = "append(this)">3</button>
+      <button value = "*" onclick = "operator(this)">*</button>
+    </div>
+    
+    <div class = "fourth stage">
+      <button value = "0" onclick = "zero(this)">0</button>
+      <button value = "00" onclick = "zero(this)">00</button>
+      <button value = "." onclick = "point(this)">.</button>
+      <button value = "/" onclick = "operator(this)">/</button>
+    </div>
+    
+    <div class = "fifth stage">
+      <button value = "0" onclick = "update(this)">AC</button>
+      <button value = "=" onclick = "calc()">=</button>
+    </div>
+  </div>
+  
+  <script>
+  let result = document.querySelector('input');
+  let state = 'initial';
+  let mode = 'num'
+  
+  function update( v ) {
+    result.value = v.value;
+    state = 'start';
+    mode = 'num';
+  }
+  
+  function append( v ) {
+    if(state == point) {
+      result.value += 0 + '.';
+    } else if(state == 'start') {
+      result.value = '';
+    }
+    result.value += v.value;
+    state = 'cal';
+  }
+  
+  function zero( v ) {
+    if(state == 'initial' ||state == 'ope') {
+      return;
+    }
+    result.value += v.value;
+    state = 'cal';
+  }
+  
+  function point( v ) {
+    if(mode == 'pointer'){
+      return;
+    } if(state == 'cal' ||state == 'start') {
+      result.value += v.value;
+    } else if(state == 'initial' ||state == 'ope') {
+      result.value += 0;
+      result.value += v.value;
+    }
+    state = 'point';
+    mode = 'pointer';
+  }
+  
+  function operator( v ) {
+    if(state == 'cal') {
+      result.value += v.value;
+    }
+    state = 'ope';
+    mode = 'num';
+  }
+  
+  function calc() {
+    if(result.value == 0) {
+      result.value = 0;
+    }
+    result.value = new Function("return " + result.value)();
+    state = 'start';
+    mode = 'num';
+  }
+    
+  </script>
+</body>
+</html>
