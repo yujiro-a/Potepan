@@ -1,0 +1,28 @@
+body {
+  font-size: 20px;
+}
+
+article {
+  text-align: center;
+}
+
+#time {
+  margin-top: 30px;
+  margin-left: 20px;
+  font-size: 30px;
+  letter-spacing: 5px;
+}
+
+#operation {
+  margin-top: 30px;
+}
+
+.button {
+  font-size: 20px;
+  width: 100px;
+  padding: 10px 20px;
+  text-align: center;
+  background-color: #ccc;
+  border: 1px solid #222222;
+  border-radius: 20px;
+}

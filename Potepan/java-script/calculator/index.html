@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="main.css">
+  <title>電卓</title>
+</head>
+<body>
+  <h1>電卓</h1>
+  <input type="text"/>
+  <div id = button>
+    <div class = "first stage">
+      <button value = "7" onclick = "append(this)">7</button>
+      <button value = "8" onclick = "append(this)">8</button>
+      <button value = "9" onclick = "append(this)">9</button>
+      <button value = "+" onclick = "append(this)">+</button>
+    </div>
+    
+    <div class = "second stage">
+      <button value = "4" onclick = "append(this)">4</button>
+      <button value = "5" onclick = "append(this)">5</button>
+      <button value = "6" onclick = "append(this)">6</button>
+      <button value = "-" onclick = "append(this)">-</button>
+    </div>
+    
+    <div class = "third stage">
+      <button value = "1" onclick = "append(this)">1</button>
+      <button value = "2" onclick = "append(this)">2</button>
+      <button value = "3" onclick = "append(this)">3</button>
+      <button value = "*" onclick = "append(this)">*</button>
+    </div>
+    
+    <div class = "fourth stage">
+      <button value = "0" onclick = "append(this)">0</button>
+      <button value = "00" onclick = "append(this)">00</button>
+      <button value = "." onclick = "append(this)">.</button>
+      <button value = "/" onclick = "append(this)">/</button>
+    </div>
+    
+    <div class = "fifth stage">
+      <button value = "0" onclick = "update(this)">AC</button>
+      <button value = "=" onclick = "calc()">=</button>
+    </div>
+  </div>
+  
+  <script>
+  let result = document.querySelector('input');
+  
+  function update( v ) {
+    result.value = v.value;
+  }
+  
+  function append( v ) {
+    if(result.value == 0) {
+      result.value = "";
+    }
+    result.value += v.value;
+  }
+  
+  function calc() {
+    if(result.value == 0) {
+      result.value = 0;
+    }
+    result.value = new Function("return " + result.value)();
+  }
+    
+  </script>
+</body>
+</html>
